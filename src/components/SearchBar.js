@@ -19,7 +19,7 @@ class SearchBar extends React.Component {
                 <input type='text'
                        value = {this.state.term}
                        onChange={e => this.setState({term: e.target.value})} />
-                <i className='search icon' />
+                <i onClick={this.onFormSubmit} className='search link icon' />
               </div>
             </div>
           </form>
